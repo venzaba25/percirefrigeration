@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Menu, X, Snowflake, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/perci-logo.jpg";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -16,11 +17,11 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-border">
       <div className="container flex items-center justify-between h-20">
-        <a href="#home" className="flex items-center gap-2">
-          <span className="h-10 w-10 rounded-xl bg-gradient-orange grid place-items-center shadow-orange">
-            <Snowflake className="h-5 w-5 text-white" />
+        <a href="#home" className="flex items-center gap-3">
+          <img src={logo} alt="Perci Refrigeration logo" className="h-12 w-12 rounded-full object-cover ring-2 ring-primary/30 shadow-orange" />
+          <span className="font-display text-lg sm:text-xl font-extrabold text-navy leading-tight">
+            Perci Refrigeration<span className="block text-[10px] font-semibold text-primary tracking-widest uppercase">& Airconditioning</span>
           </span>
-          <span className="font-display text-2xl font-extrabold text-navy">CoolFix<span className="text-primary">.</span></span>
         </a>
         <nav className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
