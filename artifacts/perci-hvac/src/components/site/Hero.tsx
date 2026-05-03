@@ -32,7 +32,7 @@ const Hero = () => (
 
       {/* Hero image */}
       <div className="relative mt-10 rounded-3xl overflow-hidden shadow-soft">
-        <img src={heroImg} alt="Expert HVAC technicians servicing industrial air conditioning" width={1280} height={720} className="w-full h-[280px] md:h-[460px] object-cover scale-[1.35] origin-[25%_top]" />
+        <img src={heroImg} alt="Expert HVAC technicians servicing industrial air conditioning" width={1280} height={720} className="w-full h-[280px] md:h-[460px] object-cover object-[25%_top]" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />
 
         {/* Stat badge */}
