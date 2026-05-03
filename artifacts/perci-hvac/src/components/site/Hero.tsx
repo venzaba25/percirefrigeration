@@ -1,6 +1,6 @@
 import { ArrowRight, Phone, Play, Users, Award, Facebook, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImg from "@assets/image_1777778845683.png";
+import heroImg from "@assets/image_1777778845683_1777822578871.png";
 
 const Hero = () => (
   <section id="home" className="relative bg-gradient-hero text-navy-foreground overflow-hidden">
